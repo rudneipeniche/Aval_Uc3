@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aval_1 teste_exemplo_1"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 02:57:18 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAzOyIwMjoyNjozNCAiOzM1ODc="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAzOyIwMjo1NzoxOCAiOzE7MzcwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A) Fa&#231;a um algoritmo que efetue o c&#225;lculo do sal&#225;rio l&#237;quido de um trabalhador. As informa&#231;&#245;es fornecidas ser&#227;o: valor da hora trabalhada, n&#250;mero de horas trabalhadas no m&#234;s e percentual de desconto de impostos. Imprima na tela o sal&#225;rio l&#237;quido final (descontado o imposto) e o valor pago em impostos. O imposto ser&#225; de 5% se o usu&#225;rio ganhar mais de R$ 2.000,00 por m&#234;s, se ganhar menos, ser&#225; isento de impostos."/>
+            <declare name="valorHora" type="Integer" array="False" size=""/>
+            <declare name="numeroHoras" type="Integer" array="False" size=""/>
+            <declare name="descontoImposto" type="Integer" array="False" size=""/>
+            <output expression="&quot;escreva as horas trabalhadas&quot;" newline="True"/>
+            <input variable="numeroHoras"/>
+            <output expression="&quot;escreva o valor das horas trabalhadas&quot;" newline="True"/>
+            <input variable="valorHora"/>
+            <assign variable="descontoImposto" expression="ValorHora*numeroHoras-0.05*100"/>
+        </body>
+    </function>
+</flowgorithm>

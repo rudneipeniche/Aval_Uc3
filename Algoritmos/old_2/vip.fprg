@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vip"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-26 05:07:11 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTI2OyIwMjo1MjozMyAiOzM1ODk="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTI2OyIwNTowNzoxMSAiOzI7MzY5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Criar um programa que receba o nome do cliente, o valor da compra dele em Reais, e se o mesmo &#233; cliente comum ou VIP. Caso seja cliente VIP, conceder um desconto de 10%. No final, deve ser mostrado o nome do cliente, o valor da compra e o valor a pagar (j&#225; subtra&#237;do o desconto)."/>
+            <declare name="nomedocliente, tipoCliente" type="String" array="False" size=""/>
+            <declare name="valorCompra, valorFinal, percentualDescontoVip" type="Real" array="False" size=""/>
+            <assign variable="valorFinal" expression="0"/>
+            <output expression="&quot;digite o nome do cliente&quot;" newline="True"/>
+            <input variable="nomedocliente"/>
+            <output expression="&quot;valor da compra&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <output expression="&quot;&#233; cliente vip&quot;" newline="True"/>
+            <input variable="tipoCliente"/>
+            <if expression="tipoCliente = &quot;sim&quot;">
+                <then>
+                    <assign variable="percentualDescontoVip" expression="valorCompra*0.10"/>
+                    <assign variable="valorFinal" expression="valorCompra-percentualDescontoVip"/>
+                    <output expression="&quot;valor com desconto &quot; &amp; valorFinal" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;nao e vip&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="perimetro1"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 02:26:07 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTE5OyIwMjoxMDo0MSAiOzM1ODQ="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTE5OyIwMjoyNjowNyAiOzE7MzcwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lado1, lado2, lado3, perimetro" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o comprimento do primeiro lado&quot;" newline="True"/>
+            <input variable="lado1"/>
+            <output expression="&quot;digite o comprimento do segundo lado&quot;" newline="True"/>
+            <input variable="lado2"/>
+            <output expression="&quot;digite o comprimento do terceiro lado&quot;" newline="True"/>
+            <input variable="lado3"/>
+            <assign variable="perimetro" expression="lado1+lado2+lado3"/>
+        </body>
+    </function>
+</flowgorithm>

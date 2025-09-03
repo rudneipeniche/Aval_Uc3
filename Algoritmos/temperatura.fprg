@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="temperatura"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-28 05:02:07 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTE5OyIwMzoxOTowMyAiOzM1OTI="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTI4OyIwNTowMjowNyAiOzI7MzY5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text=")Criar um programa onde o usu&#225;rio informe a temperatura em Celsius e o programa exiba o valor em Fahrenheit."/>
+            <declare name="tC" type="Real" array="False" size=""/>
+            <declare name="tF" type="Real" array="False" size=""/>
+            <output expression="&quot;informe a temperatura em &#186;celsius&quot;" newline="True"/>
+            <input variable="tC"/>
+            <assign variable="tF" expression="(tC*9/5)+32"/>
+            <output expression="&quot;temperatura em F&#186; &quot; &amp; tF" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

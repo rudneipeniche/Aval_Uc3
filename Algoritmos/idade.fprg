@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="idade"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-27 04:17:50 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTI3OyIwMjoxNzozMyAiOzM1OTE="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTI3OyIwNDoxNzo1MCAiOzE7MzcwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Criar um programa que receba o nome do usu&#225;rio e  o ano de nascimento do mesmo.  Ao final deve informar o nome do usu&#225;rio, sua idade e se ele &#233; maior ou menor de idade.&#10; &#10;Entradas - &#10;nome - Texto&#10;anoNascimento - Inteiro&#10;Processamento&#10;Calcular a idade&#10;Analisar se &#233; maior de idade&#10; &#10;Sa&#237;da  &#10;Nome, Idade, Se &#233; maior ou menor"/>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <declare name="anoNascimento, idadeAtual" type="Integer" array="False" size=""/>
+            <output expression="&quot;digite o nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;informe o ano de nascimento&quot;" newline="True"/>
+            <input variable="anoNascimento"/>
+            <assign variable="idadeAtual" expression="2025-anoNascimento"/>
+            <if expression="idadeAtual&gt;=18">
+                <then>
+                    <output expression="&quot; nome &quot; &amp;nome&amp; &quot; idade &quot; &amp;idadeatual&amp; &quot; &#201; maior de idade &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; nome &quot; &amp;nome&amp; &quot; idade &quot; &amp;idadeatual&amp; &quot; &#201; menor de idade &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

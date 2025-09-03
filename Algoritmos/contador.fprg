@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="contador"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-02 05:20:26 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAyOyIwMjoxMzo0NCAiOzM1ODM="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAyOyIwNToyMDoyNiAiOzE7MzY5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Criar um algoritmo que receba tr&#234;s n&#250;meros. Ele dever&#225; receber o start da contagem, o valor final da contagem&#10;e a quantidade de passos que o usu&#225;rio quer. Ao final, o programa dever&#225; mostrar a contagem conforme o usu&#225;rio escolheu.&#10; &#10;O aluno dever&#225; entregar o fluxograma e o c&#243;digo em php&#10; &#10;Ex.: &#10;Usu&#225;rio digitou as seguintes entradas:&#10;starter    --&gt; 6&#10;valorFinal --&gt; 11&#10;passo      --&gt; 2&#10; &#10;O programa dever&#225; mostrar:&#10; &#10;6 - IN&#205;CIO&#10;8&#10;10 - FIM"/>
+            <declare name="Starter, valorFinal, Passo, contador" type="Integer" array="False" size=""/>
+            <output expression="&quot;escreva valor Inicial&quot;" newline="True"/>
+            <input variable="starter"/>
+            <output expression="&quot;escreva valor final&quot;" newline="True"/>
+            <input variable="valorFinal"/>
+            <output expression="&quot;escreva passo&quot;" newline="True"/>
+            <input variable="Passo"/>
+            <assign variable="contador" expression="starter"/>
+            <output expression="contador &amp; &quot;-INICIO&quot;" newline="True"/>
+            <for variable="contador" start="Starter+passo" end="valorFinal-passo" direction="inc" step="passo">
+                <output expression="contador" newline="True"/>
+            </for>
+            <output expression="contador &amp; &quot;-FIM&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

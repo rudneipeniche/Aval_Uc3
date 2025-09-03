@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="renda mensal"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-19 03:15:20 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTE5OyIwMjo0Mzo1NyAiOzM1OTc="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTE5OyIwMzoxNToyMCAiOzE7MzY5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Criar um algoritmo que receba o nome do contribuinte, a sua renda mensal, e ao final informe quanto ele pagar&#225; de impostos.&#10;O c&#225;lculo do imposto &#233; 7,5% da renda mensal"/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="rendamensal, imposto" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o nome do contribuinte&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;digite renda mensal&quot;" newline="True"/>
+            <input variable="rendamensal"/>
+            <assign variable="imposto" expression="rendamensal * 0.075"/>
+            <output expression="&quot;contribuinte pagar&#225; R$&quot; &amp;  imposto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="algoritmomedia.fprg1"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-13 03:22:57 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTEzOyIwMjo1ODowNiAiOzM1OTE="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA4LTEzOyIwMzoyMjo1NyAiOzE7MzY5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, area" type="Real" array="False" size=""/>
+            <output expression="&quot;digite a medida da base do triangulo&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;digite a medida da altura do triangulo&quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="area" expression="(base*altura)/2"/>
+            <output expression="&quot;a area do triangulo &#233; &quot; &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

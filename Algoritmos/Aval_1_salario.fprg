@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Aval_1_salario"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 03:14:25 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAzOyIwMjo1NzoyMSAiOzM1ODc="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAzOyIwMzoxNDoyNSAiOzE7MzY5Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Fa&#231;a um algoritmo que efetue o c&#225;lculo do sal&#225;rio l&#237;quido de um trabalhador. As informa&#231;&#245;es fornecidas ser&#227;o: valor da hora trabalhada, n&#250;mero de horas trabalhadas no m&#234;s e percentual de desconto de impostos. Imprima na tela o sal&#225;rio l&#237;quido final (descontado o imposto) e o valor pago em impostos. O imposto ser&#225; de 5% se o usu&#225;rio ganhar mais de R$ 2.000,00 por m&#234;s, se ganhar menos, ser&#225; isento de impostos."/>
+            <declare name="ValorHora, horasTrabalhadas, salarioBruto, valorImposto, salarioLiquido" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o valor da hora&quot;" newline="True"/>
+            <input variable="valorHora"/>
+            <output expression="&quot;digite horas trabalhadas&quot;" newline="True"/>
+            <input variable="horasTrabalhadas"/>
+            <assign variable="salarioBruto" expression="valorHora*horasTrabalhadas"/>
+            <if expression="salarioBruto&gt;2000">
+                <then>
+                    <assign variable="valorImposto" expression="salarioBruto*0.05"/>
+                </then>
+                <else>
+                    <assign variable="valorImposto" expression="0"/>
+                </else>
+            </if>
+            <assign variable="salarioLiquido" expression="salarioBruto-valorImposto"/>
+            <output expression="&quot;O valor pago em impostos &#233; R$ &quot; &amp; valorImposto" newline="True"/>
+            <output expression="&quot;O salario liquido final &#233; R$ &quot; &amp; salarioLiquido" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

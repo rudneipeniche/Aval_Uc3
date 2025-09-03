@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="aval_1 teste_exemplo_2"/>
+        <attribute name="authors" value="rudnei.cpeniche"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 05:25:28 "/>
+        <attribute name="created" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAzOyIwMzoxNDo1MyAiOzM1ODY="/>
+        <attribute name="edited" value="cnVkbmVpLmNwZW5pY2hlO1NBTjA3MTc0NzNXMTEtMTsyMDI1LTA5LTAzOyIwNToyNToyOCAiOzI7MzcwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Criar um algoritmo que receba um n&#250;mero qualquer e fa&#231;a uma das opera&#231;&#245;es que o usu&#225;rio escolher com este n&#250;mero (Adi&#231;&#227;o ou Subtra&#231;&#227;o). Esta opera&#231;&#227;o deve ser realizada com os n&#250;meros de 1 a 10 e o resultado mostrado na tela.&#10; &#10;Exemplo: Usu&#225;rio escolheu o 6 e Adi&#231;&#227;o.&#10; &#10;Sa&#237;da:&#10;6 + 1 = 7&#10;6 + 2 = 8&#10;6 + 3 = 9&#10;6 + 4 = 10&#10;6 + 5 = 11&#10;6 + 6 = 12&#10;6 + 7 = 13&#10;6 + 8 = 14&#10;6 + 9 = 15&#10;6 + 10 = 16&#10; "/>
+            <declare name="numero, resultado" type="Integer" array="False" size=""/>
+            <declare name="operacao" type="String" array="False" size=""/>
+            <output expression="&quot;numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <output expression="&quot;escreva a operacao adicao ou subtracao&quot;" newline="True"/>
+            <input variable="operacao"/>
+            <for variable="resultado" start="1" end="10" direction="inc" step="1">
+                <if expression="operacao = &quot;adicao&quot;">
+                    <then>
+                        <output expression="&quot; o resultado &#233; &quot; &amp; numero" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
