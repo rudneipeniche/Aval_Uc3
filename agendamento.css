@@ -1,0 +1,143 @@
+/* --- Estilo geral da página de agenda --- */
+.container-agenda {
+    background-color: #f0ebdc;
+    min-height: calc(100vh - 160px);
+    padding: 30px 20px 80px;
+    font-family: 'Asap', sans-serif;
+  }
+  
+  .titulo-pagina {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #5f3a24;
+    margin-bottom: 40px;
+  }
+  
+  /* --- Layout principal --- */
+  .agenda-layout {  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* --- Mini calendário lateral --- */
+  .mini-calendario {
+    background-color: #fffef6;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 250px;
+  }
+  
+  .calendario-header {
+    text-align: center;
+    font-weight: bold;
+    color: #5f3a24;
+    margin-bottom: 10px;
+  }
+  
+  .calendario {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  .calendario th {
+    color: #5d4037;
+    font-size: 0.9em;
+  }
+  
+  .calendario td {
+    width: 14%;
+    height: 35px;
+    border-radius: 6px;
+  }
+  
+  .calendario td.ocupado {
+    background-color: #f4b4b4;
+  }
+  
+  /* --- Tabela de agendamento --- */
+  .tabela-agenda table {
+    border-collapse: collapse;
+    background-color: #fffef6;
+    border: 1px solid #6d4343;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .tabela-agenda th,
+  .tabela-agenda td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .tabela-agenda th {
+    background-color: #f9f5ec;
+    color: #5f3a24;
+    font-weight: bold;
+  }
+  
+  .tabela-agenda th span {
+    display: block;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #7d6654;
+  }
+  
+  .hora-coluna {
+    width: 80px;
+  }
+  
+  .hora {
+    background-color: #f9f5ec;
+    font-weight: bold;
+    color: #5f3a24;
+  }
+  
+  .agendamento {
+    border-radius: 10px;
+    padding: 10px;
+    color: #333;
+    font-size: 0.9em;
+  }
+  
+  .agendamento p {
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  /* Cores dos agendamentos */
+  .azul {
+    background-color: #d5e9ed;
+  }
+  
+  .vermelho {
+    background-color: #f4b4b4;
+  }
+  
+  /* --- Responsividade --- */
+  @media (max-width: 900px) {
+    .agenda-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tabela-agenda table {
+      width: 100%;
+      font-size: 0.9em;
+    }
+  
+    .mini-calendario {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  

@@ -1,0 +1,223 @@
+/* ==========================================================================
+   ESTILOS GERAIS
+   ========================================================================== */
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'Asap', sans-serif;
+    color: #3b2212;
+    background-color: #f8f5ea;
+}
+
+
+
+/* ==========================================================================
+   CABEÇALHO
+   ========================================================================== */
+.cabecalho {
+    background-color: #f0ebdc;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 90px;
+    position: relative;
+}
+
+/* Logo */
+.cabecalho .logo img {
+    height: 100px;
+}
+
+
+
+/* ==========================================================================
+   MENU SUPERIOR (Cadastrar / Login)
+   ========================================================================== */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-menu > ul:first-child {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu > ul:first-child a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #3b2212;
+    background-color: #ebb860;
+    border: 1px solid #ebb860;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.nav-menu > ul:first-child a:hover {
+    border: 1px solid #eca0a2;
+    background-color: #eca0a2;
+}
+
+
+
+/* ==========================================================================
+   MENU PRINCIPAL (Início, Cartas, etc)
+   ========================================================================== */
+.nav-menu > ul:last-child {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-menu > ul:last-child li {
+    padding: 0 30px;
+    position: relative;
+}
+
+.nav-menu > ul:last-child li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3b2212;
+}
+
+.nav-menu > ul:last-child a {
+    text-decoration: none;
+    color: #3b2212;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-menu > ul:last-child a:hover {
+    color: #eca0a2;
+}
+
+
+
+/* ==========================================================================
+   LINHA MARROM
+   ========================================================================== */
+.linha-inferior {
+    height: 15px;
+    background-color: #5d4037;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+
+
+/* ==========================================================================
+   ÁREA DO LOGIN / RECUPERAÇÃO DE SENHA
+   ========================================================================== */
+
+.container {
+    width: 480px; /* TAMANHO MAIOR DO CARD */
+    margin: 60px auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.container h2 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b2212;
+}
+
+/* Campos */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #3b2212;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #c9b9a1;
+    background-color: #f8f5ea;
+    font-size: 16px;
+    color: #3b2212;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #ebb860;
+    background-color: #fff;
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ebb860;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3b2212;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #eca0a2;
+}
+
+/* Links secundários */
+.link {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #3b2212;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #eca0a2;
+}
+
+
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+.rodape {
+    background-color: #f0ebdc;
+    color: #3b2212;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 1.6;
+}
